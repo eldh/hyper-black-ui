@@ -1,23 +1,13 @@
-## Hyper UI
+## Hyper Black
 
-Hyper UI is flat, dark & minimal theme. Inspired by Hyper terminal.
-
-![screenshot](https://i.imgsafe.org/90d310c082.png)
-
-### Font
-[Inconsolata](https://https://fonts.google.com/specimen/Inconsolata).
-
-[Download Inconsolata](https://fonts.google.com/download?family=Inconsolata)
-
-### Syntax theme
-[One-vivid-dark-syntax](https://atom.io/themes/one-dark-vivid-syntax).
+Hyper Black is flat, dark & minimal theme. Inspired by Hyper terminal.
 
 ### Install
 
 ```
-apm install hyper-ui
+apm install hyper-black-ui
 ```
 
-or go to __Settings > Install__ and search for `hyper-ui`.
+or go to __Settings > Install__ and search for `hyper-black-ui`.
 
-After installing, select "Hyper UI" from the Settings > Themes > UI Themes drop-down menu.
+After installing, select "Hyper Black" from the Settings > Themes > UI Themes drop-down menu.
