@@ -7,6 +7,15 @@
 .status          { color: @text-color; }
 .status-added    { color: @text-color-success; } // green
 .status-ignored  { color: @text-color-subtle; }  // faded
-.status-modified { color: @text-color-warning; } // orange
-.status-removed  { color: @text-color-error; }   // red
+.status-modified { color: @blue; } // orange
+.status-removed  { color: @red; }   // red
 .status-renamed  { color: @text-color-info; }    // blue
+
+atom-text-editor .gutter .line-number {
+  &.git-line-modified {
+    border-color: @blue;
+  }
+  &.git-line-added {
+    border-color: @green;
+  }
+}

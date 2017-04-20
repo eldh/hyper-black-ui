@@ -1,0 +1,39 @@
+.linter-highlight.linter-gutter {
+  &.linter-error {
+    color: @red !important;
+  }
+
+  &.linter-warning {
+    color: @yellow !important;
+  }
+}
+
+.linter-highlight .region {
+  border-bottom: none !important;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 5px;
+    border: 1px solid transparent;
+    top: -1px;
+    bottom: -1px;
+    left: -6px;
+    right: -6px;
+  }
+}
+
+.linter-highlight.linter-error .region {
+  &::before {
+    background-color: darken(@red, 55%);
+    border-color: darken(@red, 45%);
+  }
+}
+
+.linter-highlight.linter-warning .region {
+  &::before {
+    background-color: darken(@yellow, 65%);
+    border-color: darken(@yellow, 50%);
+  }
+}

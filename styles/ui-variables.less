@@ -10,29 +10,82 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
-@primary-color: #bba43f;
+@primary-color: @green;
 @dark-gray: rgb(24, 24, 24);
 @black: rgb(0, 0, 0);
 
+
+// These colors are specific to the theme not use in a package!
+
+// @very-gray-light: #c5c8c6;
+// @gray-light: #969896;
+// @gray: #373b41;
+// @dark-gray: #282a2e;
+// @very-dark-gray: #1d1f21;
+//
+// @cyan: #8abeb7;
+// @blue: #81a2be;
+// @purple: #b294bb;
+// @green: #b5bd68;
+// @red: #cc6666;
+// @orange: #de935f;
+// @orange-light: #f0c674;
+//
+
+@white: #F8F8F0;
+
+@black: #000;
+@black-light: rgb(24, 24, 24);
+
+@gray: #c1c1c1;
+@gray-light: #d5d5d5;
+@gray-lighter: #ededed;
+@gray-dark: #989898;
+
+@yellow: rgb(222, 221, 165);
+@yellow-dark: rgb(195, 194, 141);
+
+@green: rgb(120, 201, 145);
+@green-light: rgb(137, 223, 169);
+
+@orange: rgb(235, 180, 145);
+@orange-light: rgb(222, 165, 150);
+@orange-lighter: rgb(236, 201, 172);
+
+@blue: rgb(113, 160, 189);
+@blue-light: rgb(156, 198, 226);
+@blue-lighter: rgb(167, 210, 236);
+
+@purple: rgb(107, 99, 120);
+@purple-light: rgb(134, 123, 147);
+@purple-lighter: rgb(186, 170, 217);
+
+@brown: rgb(108, 99, 98);
+
+@red: rgb(230, 132, 132);
+@red-light: rgb(242, 182, 182);
+
+@cyan: rgb(155, 201, 183);
+
 // Text Colors
-@text-color:           #a7a7a7;
-@text-color-subtle:    darken(@text-color, 30%);
-@text-color-highlight: lighten(@text-color, 20%);
+@text-color:           @gray;
+@text-color-subtle:    darken(@text-color, 25%);
+@text-color-highlight: @white;
 @text-color-selected:  lighten(@text-color, 5%);
 
-@text-color-info:    #4e76ad;
+@text-color-info:    @blue;
 @text-color-success: @primary-color;
-@text-color-warning: #c7a05e;
-@text-color-error:   #c63a50;
+@text-color-warning: @orange;
+@text-color-error:   @red;
 
 // Background colors
-@background-color-info:    darken(#243e9a, 10%);
-@background-color-success: darken(#99761c, 10%);
-@background-color-warning: darken(#9c7e33, 10%);
-@background-color-error:   darken(#a22938, 10%);
+@background-color-info:    darken(@blue, 30%);
+@background-color-success: darken(@green, 30%);
+@background-color-warning: darken(@orange, 30%);
+@background-color-error:   darken(@red, 30%);
 
-@background-color-highlight: lighten(@base-background-color, 3%);
-@background-color-selected:  lighten(@base-background-color, 5%);
+@background-color-highlight: lighten(@base-background-color, 5%);
+@background-color-selected:  @black-light;
 @app-background-color:       @base-background-color;
 
 // Base colors
@@ -74,11 +127,11 @@
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1: @blue-light;
+@ui-site-color-2: @green-light;
+@ui-site-color-3: @orange;
+@ui-site-color-4: @purple-lighter;
+@ui-site-color-5: @yellow;
 
 // Sizes
 @font-size: 11px;
