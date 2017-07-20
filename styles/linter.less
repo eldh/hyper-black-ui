@@ -37,3 +37,26 @@
     border-color: darken(@yellow, 50%);
   }
 }
+
+#linter-tooltip linter-message {
+  background-color: lighten(@base-background-color, 7%);
+  box-shadow: 0 0 10px 2px @base-background-color;
+  border-width: 0px !important;
+  border-radius: 5px;
+  padding: 0.125em 0.5em;
+  font-family: @font-family;
+
+  &.error {
+    background-color: darken(@red, 60%);
+    border-color: darken(@red, 45%) !important;
+  }
+
+  &.warning {
+    background-color: darken(@yellow, 65%);
+    border-color: darken(@yellow, 50%) !important;
+  }
+
+  *::before {
+    display: none;
+  }
+}
